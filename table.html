@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td { border: 2px solid black; border-collapse: collapse; padding: 5px; }
+    </style>
+    <link rel="stylesheet" type="text/css" href="stylee.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">TIMER TASK</h1>
+    <br>
+    <div class="sides">
+    <div class="side1">
+        <br><br>
+    <label>Enter Task and Description</label>
+    <br><br>
+    <input type="text" placeholder="Task" id="task">
+    <br><br>
+    <input type="text" placeholder="Description" id="desc">
+    <h4 id="timer">00:00:00</h4>
+    <div class="time">
+    <button type="button" id="sbutton">Start</button>
+    <button type="button" id="ebutton">Stop</button>
+    </div>
+    <br><br><br>
+    <button type="button" id="enter">Enter</button>
+  </div>
+    <div class="side2">
+    <table id="tasktable">
+        <thead>
+            <tr>
+                <th colspan="3" class="taskd">Task Details</th>
+            </tr>
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody id="taskList">
+            <tr>
+                <td>ProjectA</td>
+                <td>Develop App</td>
+                <td>00:38:00</td>
+            </tr>
+            <tr>
+                <td>Meeting</td>
+                <td>Client Meeting</td>
+                <td>00:54:32</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Break</td>
+                <td>01:15:00</td>
+            </tr>
+        </tbody>  
+    </table>
+    <br>
+    <button type="button" id="clearButton">Clear</button>
+    </div>
+    <div class="side3"><img src="time1.jpeg" width="300px" height="300px"></div>
+</div>
+    <script type="text/javascript" src="demo.js"></script>
+</body>
+</html>
